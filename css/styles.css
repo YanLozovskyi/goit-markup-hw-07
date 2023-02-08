@@ -192,26 +192,6 @@ address {
   background-color: var(--color-for-interactive-elements);
 }
 
-/* .site-nav .link::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color-for-interactive-elements);
-
-  transform: scaleX(0);
-  transition: transform 250ms var(--cubic);
-}
-
-.site-nav .link:is(:hover, :focus)::after {
-  transform: scaleX(1);
-} */
-
 /* Address */
 
 .address {
@@ -222,10 +202,6 @@ address {
   display: flex;
   gap: 40px;
 }
-
-/* .adress .item + .item {
-  margin-left: 40px;
-} */
 
 .address-link {
   color: var(--primary-text-color);
@@ -294,32 +270,6 @@ address {
   margin-bottom: 8px;
   background-color: var(--secondary-background-color);
 }
-
-/* .company-benefits .item::before {
-  content: "";
-  display: block;
-  height: 112px;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  background-color: var(--secondary-background-color);
-} */
-
-/* .company-benefits .item:nth-child(1)::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.company-benefits .item:nth-child(2)::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.company-benefits .item:nth-child(3)::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.company-benefits .item:nth-child(4)::before {
-  background-image: url(../images/astronaut\ 1.svg);
-} */
 
 /* products content */
 
