@@ -71,7 +71,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  min-width: 1158px;
 }
 
 .visually-hidden {
@@ -300,6 +299,16 @@ body {
 
 /* products content */
 
+.company-products {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .company-products {
+    display: block;
+  }
+}
+
 .company-products .section-title {
   margin-bottom: 72px;
 }
@@ -313,19 +322,59 @@ body {
 
 .owr-team {
   background-color: var(--secondary-background-color);
+  min-width: 320px;
 }
 
 .owr-team .section-title {
   margin-bottom: 72px;
 }
 
-.owr-team-title {
-  margin-bottom: 8px;
-}
-
 .owr-team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.owr-team-item {
+  max-width: 264px;
+}
+
+@media screen and (min-width: 768px) {
+  .owr-team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .owr-team-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .owr-team-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+}
+
+.team-border {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.owr-team-title {
+  margin-bottom: 8px;
 }
 
 .owr-team-text {
@@ -356,16 +405,6 @@ body {
 
 .team-social-media-icon {
   fill: var(--secondary-background-color);
-}
-
-.team-border {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  background: var(--color-white);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-  text-align: center;
 }
 
 /* Customers */
