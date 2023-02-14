@@ -733,6 +733,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-content {
     align-items: baseline;
+    gap: 0;
   }
 }
 
@@ -829,6 +830,8 @@ body {
 @media screen and (min-width: 768px) {
   .footer-form input {
     margin-right: 24px;
+    min-width: 264px;
+    margin-bottom: 0;
   }
 
   .foter-subscribe-form {
