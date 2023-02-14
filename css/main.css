@@ -269,19 +269,46 @@ body {
 }
 
 /* benefits content */
+@media screen and (min-width: 1200px) {
+  .company-benefits {
+    padding-bottom: 0;
+  }
+}
 
 .company-benefits-title {
+  text-align: center;
   margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .company-benefits-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company-benefits-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .company-benefits-text {
+  font-weight: 500;
+}
 }
 
 .company-benefits-list {
   display: flex;
   flex-direction: column;
   gap: 72px;
-}
-
-.company-benefits-item {
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -298,10 +325,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .company-benefits {
-    padding-bottom: 0;
-  }
-
   .company-benefits-list {
   }
 
