@@ -270,31 +270,60 @@ body {
 
 /* benefits content */
 
-.company-benefits {
-  padding-bottom: 0;
-}
-
 .company-benefits-title {
   margin-bottom: 8px;
 }
 
 .company-benefits-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .company-benefits-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  
+}
+
+@media screen and (min-width: 768px) {
+  .company-benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .company-benefits-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company-benefits {
+    padding-bottom: 0;
+  }
+
+  .company-benefits-list {
+  }
+
+  .company-benefits-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
 }
 
 .benefits-icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  background-color: var(--secondary-background-color);
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: var(--secondary-background-color);
+  }
 }
 
 /* products content */
