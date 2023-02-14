@@ -152,6 +152,28 @@ body {
   margin-right: auto;
 }
 
+/* mobile menu */
+
+.open-mobile-button-menu {
+  display: flex;
+  padding: 0;
+  border: transparent;
+  background-color: var(--color-white);
+  margin-left: auto;
+  width: 32px;
+  height: 22px;
+}
+
+.open-mobile-button-menu-icon {
+  stroke: #404bbf;
+}
+
+.icon-cross {
+}
+
+.icon-menu {
+}
+
 /* logo */
 
 .logo {
