@@ -928,8 +928,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(46, 47, 66, 0.4);
   transition: visibility 250ms var(--cubic), opacity 250ms var(--cubic);
 }
@@ -961,6 +961,12 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
   opacity: 0;
+}
+
+@media screen and (max-width: 427px) {
+  .modal {
+    width: 90%;
+  }
 }
 
 .modal-close-btn {
