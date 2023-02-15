@@ -1084,10 +1084,6 @@ body {
 .modal-checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: #757575;
   position: relative;
 }
 
@@ -1104,11 +1100,18 @@ body {
   transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
+.privacy-policy-text {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+}
+
 .privacy-policy-link {
   color: var(--accent-color);
 }
 
-.modal-checkbox:checked + .modal-checkbox-label span {
+.modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-icon-wrap {
   background-color: var(--accent-color);
   border: none;
   fill: var(--color-white);
