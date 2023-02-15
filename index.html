@@ -58,18 +58,14 @@
             </li>
           </ul>
         </address>
-        <button
-          class="open-mobile-button-menu js-open-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button class="open-mobile-button-menu" type="button" data-menu-open>
           <svg
             class="open-mobile-button-menu-icon"
             aria-label="Переключатель мобильного меню"
+            width="32"
+            height="32"
           >
             <use href="./images/sprite.svg#icon-menu"></use>
-            <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
       </div>
@@ -698,6 +694,117 @@
         </form>
       </div>
     </div>
+    <!-- Mobile Menu -->
+    <div class="backdrop-mobile-menu" data-menu>
+      <div class="mobile-menu">
+        <button class="close-mobile-button-menu" type="button" data-menu-close>
+          <svg
+            class="close-mobile-button-menu-icon"
+            width="8"
+            height="8"
+            aria-label="Выключатель мобильного меню"
+          >
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="nav-mobile">
+          <ul class="nav-mobile-menu list">
+            <li class="nav-mobile-item">
+              <a href="./index.html" class="nav-mobile-link link current-mobile"
+                >Studio</a
+              >
+            </li>
+            <li class="nav-mobile-item">
+              <a href="./portfolio.html" class="nav-mobile-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-mobile-item">
+              <a href="" class="nav-mobile-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address-mobile">
+          <ul class="address-mobile-list list">
+            <li class="address-mobile-item">
+              <a href="tel:+110001111111" class="address-mobile-menu-tel link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-mobile-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="address-mobile-menu-email link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social-media-list list">
+          <li class="mobile-menu-social-media-item">
+            <a
+              href="https://www.instagram.com/"
+              class="mobile-menu-social-media-link link"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><svg
+                class="mobile-menu-social-media-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-media-item">
+            <a
+              href="https://twitter.com/"
+              class="mobile-menu-social-media-link link"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><svg
+                class="mobile-menu-social-media-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-media-item">
+            <a
+              href="https://www.facebook.com/"
+              class="mobile-menu-social-media-link link"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><svg
+                class="mobile-menu-social-media-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-media-item">
+            <a
+              href="https://www.linkedin.com/"
+              class="mobile-menu-social-media-link link"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><svg
+                class="mobile-menu-social-media-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
