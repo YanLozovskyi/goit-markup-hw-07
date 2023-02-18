@@ -186,8 +186,6 @@ body {
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 77px;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 }
 
@@ -286,7 +284,7 @@ body {
 
 .hero {
   min-width: 320px;
-  max-width: 428px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -338,9 +336,6 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/background/tablet/tablet-bg.jpg);
-
-
-    max-width: 768px;
   }
 }
 
@@ -910,6 +905,7 @@ body {
 }
 
 .footer .logo {
+  margin-right: 0;
   margin-bottom: 16px;
   color: var(--secondary-background-color);
 }
